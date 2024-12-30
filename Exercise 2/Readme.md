@@ -40,20 +40,8 @@ Please explain your solution and how you distribute work among workers.
 
 The Term Frequency (TF) is calculated by counting the number of times a token occurs in the document.
 This TF score is relative to a specific document, therefore you need to normalized it by dividing with
-the total number of tokens appearing in the document. A normalized TF score for a specific tokentin
-a documentdcan be calculated as,
+the total number of tokens appearing in the document.
 
-```
-TF(t, d) =
-```
-```
-nd(t)
-∑
-t′∈dn
-d(t′), (1)
-```
-wherend(t) is the number of times a tokentappears in a documentdand|d|is the total number of
-tokens in the documentd.
 Develop an solution using MPI framework and write code. Please explain how you parallelize (or dis-
 tribute) TF(t,d) calculation. Also explain your strategy from the data division and calculation division
 point of view as well. Perform a small experiment by varying number workers i.e. P={ 2 , 4 , 8 }. Also
