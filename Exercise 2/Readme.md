@@ -65,22 +65,7 @@ The Inverse Document Frequency ((IDF) is counting the number of documents in the
 the number of documents that contain a token. While the TF is calculated on a per-document basis, the
 IDF is computed on the basis of the entire corpus. The final IDF score of a tokentin the corpusCis
 obtained by taking logarithm of document count in the corpus divided by the number of documents in
-the corpus that contain a particular token. The IDF formula is given as
-
-```
-IDF(t) = log
-```
-## |C|
-
-## ∑
-
-```
-d∈C^1 (t, d)
-```
-## , (2)
-
-where 1 (t, d) is an indicator function which returns 1 if a tokentexists in documentd. |C|is the
-total number of documents in the corpus.
+the corpus that contain a particular token. 
 
 Develop an solution using MPI framework and write cod. Please explain how you parallelize (or
 distribute) IDF(t,d) calculation. Also explain your strategy from the data division and calculation
